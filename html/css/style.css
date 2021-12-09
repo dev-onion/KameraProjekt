@@ -1,3 +1,46 @@
-body {
-  background-color: red;
+@font-face {
+    font-family: "Ubuntu";
+    font-weight: normal;
+    src: url('../font/Ubuntu-L.ttf');}
+@font-face {
+    font-family: "Ubuntu";
+    font-weight: bold;
+    src: url('../font/Ubuntu-B.ttf');}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Ubuntu;
+}
+nav {
+  background:linear-gradient(-175deg, #2dc2e3 1%, #005dba 40%)
+}
+.menu{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 5rem;
+}
+.menupunkt {
+  flex: 3;
+  align-self: center;
+}
+.menupunkt a {
+  flex-direction: row;
+  width: 20rem;
+  color: white;
+  text-decoration: none;
+  padding: 1.9em 4em 1.9em 4em;
+}
+.menupunkt a:hover {
+  text-decoration: underline;
+}
+#logo {
+  height: 3rem;
+  padding-left: 2rem;
 }
