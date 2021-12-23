@@ -29,9 +29,17 @@
       </nav>
     </header>
     <main>
-      <div>
-          <h1>Hallo!</h1>
-          <img src="{% static 'website/images/Logo.svg' %}" alt="">
+      <div class="toolbar">
+        <h1 class="toolbarHeadline">Systemüberwachung</h1>
+        <ul>
+          <li>Überblick</li>
+          <li>
+            <form method="get" action="#">
+              <input type="submit" name="Next" value="Next">
+            </form>
+          </li>
+          <li>Systeminformationen</li>
+        </ul>
       </div>
     </main>
     <footer>

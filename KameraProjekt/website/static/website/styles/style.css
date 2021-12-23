@@ -2,6 +2,11 @@ body{
   padding: 0;
   margin: 0;
   font-family: Ubuntu;
+  overflow: hidden;
+}
+h1 {
+  margin: 0;
+  padding: 0;
 }
 nav {
   background:linear-gradient(-175deg, #2dc2e3 1%, #005dba 40%)
@@ -32,8 +37,27 @@ nav {
   padding-left: 2rem;
 }
 main {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-top: 20vh;
+
+}
+.toolbar {
+  width: 25%;
+  margin-top: -2px;
+  height: 39rem;
+  padding-left: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), black, rgba(0, 0, 0, 0.1))0 1 0 0;
+}
+.toolbarHeadline {
+  font-size: 1.8rem;
+  padding: 1rem 0 0 0;
+}
+.toolbar li {
+  list-style: none;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
 }
