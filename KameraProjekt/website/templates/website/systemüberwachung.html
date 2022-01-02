@@ -21,10 +21,10 @@
       <nav>
         <ul class="menu">
           <li class="menupunkt"><a href="#"><img src="{% static 'website/images/Logo.svg' %}" alt="" id="logo"></a></li> <!--später surch Django Template ersetzen-->
-          <li class="menupunkt"><a href="#">Kamera</a></li>
-          <li class="menupunkt"><a href="#">Download</a></li>
-          <li class="menupunkt"><a href="#">Systemüberwachung</a></li>
-          <li class="menupunkt"><a href="#">Hilfe</a></li>
+          <li class="menupunkt"><a href="{%url 'kamera'%}">Kamera</a></li>
+          <li class="menupunkt"><a href="{%url 'kamera'%}">Download</a></li>
+          <li class="menupunkt"><a href="{%url 'systemüberwachung'%}">Systemüberwachung</a></li>
+          <li class="menupunkt"><a href="{%url 'systemüberwachung'%}">Hilfe</a></li>
         </ul>
       </nav>
     </header>
@@ -32,13 +32,8 @@
       <div class="toolbar">
         <h1 class="toolbarHeadline">Systemüberwachung</h1>
         <ul>
-          <li>Überblick</li>
-          <li>
-            <form method="get" action="#">
-              <input type="submit" name="Next" value="Next">
-            </form>
-          </li>
-          <li>Systeminformationen</li>
+          <li><a href="#">Überblick</a></li>
+          <li><a href="#">Systeminformationen</a></li>
         </ul>
       </div>
     </main>
