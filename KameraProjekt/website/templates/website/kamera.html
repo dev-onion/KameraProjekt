@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Systemüberwachung</title>
+    <link rel="stylesheet" href="{% static 'website/styles/style.css' %}"><!--später surch Django Template ersetzen-->
+    <style media="screen">
+      @font-face {
+          font-family: "Ubuntu";
+          font-weight: normal;
+          src: url({% static 'website/fonts/Ubuntu-L.ttf' %});}
+      @font-face {
+          font-family: "Ubuntu";
+          font-weight: bold;
+          src: url({% static 'website/fonts/Ubuntu-B.ttf' %});}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li class="menupunkt"><a href="#"><img src="{% static 'website/images/Logo.svg' %}" alt="" id="logo"></a></li> <!--später surch Django Template ersetzen-->
+          <li class="menupunkt"><a href="{%url 'kamera'%}">Kamera</a></li>
+          <li class="menupunkt"><a href="{%url 'kamera'%}">Download</a></li>
+          <li class="menupunkt"><a href="{%url 'systemüberwachung'%}">Systemüberwachung</a></li>
+          <li class="menupunkt"><a href="{%url 'systemüberwachung'%}">Hilfe</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="toolbar">
+        <h1 class="toolbarHeadline">Kamera</h1>
+        <ul>
+          <li><a href="#">Überblick</a></li>
+          <li><a href="#">Kameraoptionen</a></li>
+        </ul>
+      </div>
+      <div class="livestream">
+        <div class="kameras">
+
+        </div>
+        <div class="steuerung">
+
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p></p>
+    </footer>
+  </body>
+</html>
